@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    /><script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+   <link rel="stylesheet" href="src/styles.css" />
+    <title>Weather</title>
+  </head>
+
+  <body>
+  <form id="search-form">
+      <div class="col-6">
+    <input
+      type="search"
+      placeholder="Type a city.."
+      autofocus="on"
+      autocomplete="off"
+      id="city-input"
+      class="form-control shadow-sm"
+    />
+  </div>
+  <div class="col-3">
+    <input
+      type="submit"
+      value="Search"
+      class="form-control btn btn-primary shadow-sm w-100"
+    />
+  </div>
+  </form>
+    <div class="container text-center weather">
+      <div class="row align-items-start">
+        <div class="col-5 city">
+          <span class="day" id="time"></span> 
+          <br />
+          <h2 class="city" id="city"></h2> 
+          <span id="temperature">19</span>  <a href="#" id="celsius-temp">°C</a> |<a href="#" id="fahrenheit-temp">°F</a>
+        </div>
+      </div>
+    </div>
+    <div class="days">
+    <div class="row">
+         <div class ="border + col">Monday<br/><h2>3°C<h2>☁️</div>
+         <div class ="border + col">Tuesday<br/><h2>15°C</h2>⛅️</div>
+         <div class ="border + col">Wednesday<br/><h2>21°C<h2>☀️</div>
+         <div class="border + col">Thursday<br/><h2>-2°C<h2>☁️</div>
+         <div class="border + col">Friday<br/><h2>3°C<h2>☁️</div>
+    </div>
+   </div>
+  </div>
+  <div>
+    <a href="">Open-sourse code</a> by Anastasiia Ihnatenko
+  </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
